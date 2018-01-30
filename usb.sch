@@ -1,0 +1,320 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+LIBS:Interface_USB
+LIBS:Connector_Specialized
+LIBS:RF_AM_FM
+LIBS:Power_Protection
+LIBS:Power_Management
+LIBS:Battery_Management
+LIBS:Regulator_Switching
+LIBS:30rc-remote-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 6800 3000 2    60   Input ~ 0
+USB_RX
+Text HLabel 6800 2900 2    60   Output ~ 0
+USB_TX
+$Comp
+L FT232RL U?
+U 1 1 5A681187
+P 6000 3600
+F 0 "U?" H 5350 4500 50  0000 L CNN
+F 1 "FT232RL" H 6400 4500 50  0000 L CNN
+F 2 "Package_SSOP:SSOP-28_5.3x10.2mm_P0.65mm" H 6000 3600 50  0001 C CNN
+F 3 "" H 6000 3600 50  0001 C CNN
+	1    6000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A681224
+P 7300 2200
+F 0 "C?" H 7325 2300 50  0000 L CNN
+F 1 "100nF" H 7325 2100 50  0000 L CNN
+F 2 "" H 7338 2050 50  0001 C CNN
+F 3 "" H 7300 2200 50  0001 C CNN
+	1    7300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A681259
+P 4800 2750
+F 0 "C?" H 4825 2850 50  0000 L CNN
+F 1 "100nF" H 4825 2650 50  0000 L CNN
+F 2 "" H 4838 2600 50  0001 C CNN
+F 3 "" H 4800 2750 50  0001 C CNN
+	1    4800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A6812C0
+P 7600 2200
+F 0 "C?" H 7625 2300 50  0000 L CNN
+F 1 "4.7uF" H 7625 2100 50  0000 L CNN
+F 2 "" H 7638 2050 50  0001 C CNN
+F 3 "" H 7600 2200 50  0001 C CNN
+	1    7600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_B_Micro J?
+U 1 1 5A68147B
+P 2350 3200
+F 0 "J?" H 2150 3650 50  0000 L CNN
+F 1 "USB_B_Micro" H 2150 3550 50  0000 L CNN
+F 2 "" H 2500 3150 50  0001 C CNN
+F 3 "" H 2500 3150 50  0001 C CNN
+	1    2350 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A6819A0
+P 4800 2950
+F 0 "#PWR?" H 4800 2700 50  0001 C CNN
+F 1 "GND" H 4800 2800 50  0000 C CNN
+F 2 "" H 4800 2950 50  0001 C CNN
+F 3 "" H 4800 2950 50  0001 C CNN
+	1    4800 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2550 5900 2600
+Wire Wire Line
+	4800 2550 5900 2550
+Wire Wire Line
+	4350 3200 5200 3200
+Wire Wire Line
+	4350 3300 5200 3300
+$Comp
+L Ferrite_Bead L?
+U 1 1 5A68200F
+P 5650 2000
+F 0 "L?" V 5500 2025 50  0000 C CNN
+F 1 "Ferrite_Bead" V 5800 2000 50  0000 C CNN
+F 2 "" V 5580 2000 50  0001 C CNN
+F 3 "" H 5650 2000 50  0001 C CNN
+	1    5650 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 2000 7600 2000
+Wire Wire Line
+	4800 2550 4800 2600
+Wire Wire Line
+	4800 2900 4800 2950
+Wire Wire Line
+	5200 2900 5100 2900
+Wire Wire Line
+	5100 2900 5100 2550
+Connection ~ 5100 2550
+Connection ~ 6100 2000
+Wire Wire Line
+	6100 2000 6100 2600
+Connection ~ 7300 2000
+Wire Wire Line
+	7300 2350 7300 2400
+Wire Wire Line
+	7300 2400 7600 2400
+Wire Wire Line
+	7600 2350 7600 2450
+$Comp
+L GND #PWR?
+U 1 1 5A68256F
+P 7600 2450
+F 0 "#PWR?" H 7600 2200 50  0001 C CNN
+F 1 "GND" H 7600 2300 50  0000 C CNN
+F 2 "" H 7600 2450 50  0001 C CNN
+F 3 "" H 7600 2450 50  0001 C CNN
+	1    7600 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 7600 2400
+Wire Wire Line
+	7600 2000 7600 2050
+Wire Wire Line
+	7300 2050 7300 2000
+$Comp
+L C C?
+U 1 1 5A682B8F
+P 4550 3550
+F 0 "C?" H 4575 3650 50  0000 L CNN
+F 1 "100nF" H 4575 3450 50  0000 L CNN
+F 2 "" H 4588 3400 50  0001 C CNN
+F 3 "" H 4550 3550 50  0001 C CNN
+	1    4550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L USBLC6-2SC6 U?
+U 1 1 5A674207
+P 3800 3250
+F 0 "U?" H 4000 3600 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 4200 2850 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3050 3650 50  0001 C CNN
+F 3 "" H 4000 3600 50  0001 C CNN
+	1    3800 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 2700 4350 3200
+Wire Wire Line
+	4350 3300 4350 3800
+Wire Wire Line
+	4350 3800 3900 3800
+Wire Wire Line
+	3900 3800 3900 3750
+Wire Wire Line
+	3700 2750 3700 2700
+Wire Wire Line
+	3700 2700 3200 2700
+Wire Wire Line
+	3200 2700 3200 3200
+Wire Wire Line
+	3200 3200 2650 3200
+Wire Wire Line
+	3700 3750 3700 3800
+Wire Wire Line
+	3700 3800 3200 3800
+Wire Wire Line
+	3200 3800 3200 3300
+Wire Wire Line
+	3200 3300 2650 3300
+Wire Wire Line
+	3900 2750 3900 2700
+Wire Wire Line
+	3900 2700 4350 2700
+$Comp
+L GND #PWR?
+U 1 1 5A67476A
+P 3050 3400
+F 0 "#PWR?" H 3050 3150 50  0001 C CNN
+F 1 "GND" H 3050 3250 50  0000 C CNN
+F 2 "" H 3050 3400 50  0001 C CNN
+F 3 "" H 3050 3400 50  0001 C CNN
+	1    3050 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3250 3050 3250
+Wire Wire Line
+	3050 3250 3050 3400
+Wire Wire Line
+	4300 3250 4550 3250
+Wire Wire Line
+	4550 2000 4550 3400
+Wire Wire Line
+	2650 3000 2900 3000
+$Comp
+L GND #PWR?
+U 1 1 5A674987
+P 4550 3800
+F 0 "#PWR?" H 4550 3550 50  0001 C CNN
+F 1 "GND" H 4550 3650 50  0000 C CNN
+F 2 "" H 4550 3800 50  0001 C CNN
+F 3 "" H 4550 3800 50  0001 C CNN
+	1    4550 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4550 3250
+Wire Wire Line
+	4550 3700 4550 3800
+Wire Wire Line
+	4550 2550 2900 2550
+Wire Wire Line
+	2900 2550 2900 3000
+NoConn ~ 2650 3400
+$Comp
+L GND #PWR?
+U 1 1 5A674E31
+P 2750 4100
+F 0 "#PWR?" H 2750 3850 50  0001 C CNN
+F 1 "GND" H 2750 3950 50  0000 C CNN
+F 2 "" H 2750 4100 50  0001 C CNN
+F 3 "" H 2750 4100 50  0001 C CNN
+	1    2750 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2000 4550 2000
+Connection ~ 4550 2550
+$Comp
+L Ferrite_Bead L?
+U 1 1 5A6751A6
+P 2450 3900
+F 0 "L?" V 2300 3925 50  0000 C CNN
+F 1 "Ferrite_Bead" V 2600 3900 50  0000 C CNN
+F 2 "" V 2380 3900 50  0001 C CNN
+F 3 "" H 2450 3900 50  0001 C CNN
+	1    2450 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 3600 2250 3900
+Wire Wire Line
+	1950 3900 2300 3900
+$Comp
+L TEST TP?
+U 1 1 5A6754F3
+P 1950 3800
+F 0 "TP?" H 1950 4100 50  0000 C BNN
+F 1 "TEST" H 1950 4050 50  0000 C CNN
+F 2 "" H 1950 3800 50  0001 C CNN
+F 3 "" H 1950 3800 50  0001 C CNN
+	1    1950 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3600 2750 3600
+Wire Wire Line
+	2750 3600 2750 4100
+Wire Wire Line
+	1950 3900 1950 3800
+Connection ~ 2250 3900
+Wire Wire Line
+	2600 3900 2750 3900
+Connection ~ 2750 3900
+$EndSCHEMATC

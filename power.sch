@@ -1,0 +1,432 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+LIBS:Interface_USB
+LIBS:Connector_Specialized
+LIBS:RF_AM_FM
+LIBS:Power_Protection
+LIBS:Power_Management
+LIBS:Battery_Management
+LIBS:Regulator_Switching
+LIBS:30rc-remote-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP73843-420I/MS U?
+U 1 1 5A6AFAAB
+P 3500 1950
+F 0 "U?" H 3200 2250 60  0000 C CNN
+F 1 "MCP73843-420I/MS" H 4000 2250 60  0000 C CNN
+F 2 "" H 3500 1950 60  0001 C CNN
+F 3 "" H 3500 1950 60  0001 C CNN
+	1    3500 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5A6AFAC5
+P 2900 1500
+F 0 "R?" V 2980 1500 50  0000 C CNN
+F 1 "100k" V 2900 1500 50  0000 C CNN
+F 2 "" V 2830 1500 50  0001 C CNN
+F 3 "" H 2900 1500 50  0001 C CNN
+	1    2900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 5A6AFB05
+P 2650 1500
+F 0 "D?" H 2650 1600 50  0000 C CNN
+F 1 "LED" H 2650 1400 50  0000 C CNN
+F 2 "" H 2650 1500 50  0001 C CNN
+F 3 "" H 2650 1500 50  0001 C CNN
+	1    2650 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5A6AFB20
+P 2850 2300
+F 0 "C?" H 2875 2400 50  0000 L CNN
+F 1 "100nF" H 2875 2200 50  0000 L CNN
+F 2 "" H 2888 2150 50  0001 C CNN
+F 3 "" H 2850 2300 50  0001 C CNN
+	1    2850 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C?
+U 1 1 5A6AFB45
+P 2300 1550
+F 0 "C?" H 2325 1650 50  0000 L CNN
+F 1 "10uF" H 2325 1450 50  0000 L CNN
+F 2 "" H 2338 1400 50  0001 C CNN
+F 3 "" H 2300 1550 50  0001 C CNN
+	1    2300 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_SGD Q?
+U 1 1 5A6AFB74
+P 4550 1350
+F 0 "Q?" V 4750 1400 50  0000 L CNN
+F 1 "IRF7404" V 4750 1000 50  0000 L CNN
+F 2 "" H 4750 1450 50  0001 C CNN
+F 3 "" H 4550 1350 50  0001 C CNN
+	1    4550 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5A6AFBED
+P 3900 1250
+F 0 "R?" V 3980 1250 50  0000 C CNN
+F 1 "220m" V 3900 1250 50  0000 C CNN
+F 2 "" V 3830 1250 50  0001 C CNN
+F 3 "" H 3900 1250 50  0001 C CNN
+	1    3900 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 1950 4550 1950
+Wire Wire Line
+	4550 1950 4550 1550
+Wire Wire Line
+	4350 1250 4050 1250
+Wire Wire Line
+	4100 1850 4200 1850
+Wire Wire Line
+	4200 1850 4200 1250
+Connection ~ 4200 1250
+Wire Wire Line
+	3500 1250 3500 1500
+Wire Wire Line
+	2950 1850 2900 1850
+Wire Wire Line
+	2900 1850 2900 1650
+Wire Wire Line
+	2950 1950 2650 1950
+Wire Wire Line
+	2650 1950 2650 1650
+Wire Wire Line
+	2650 1250 2650 1350
+Connection ~ 3500 1250
+Wire Wire Line
+	2900 1250 2900 1350
+Connection ~ 2900 1250
+$Comp
+L CP C?
+U 1 1 5A6B01D8
+P 4200 2300
+F 0 "C?" H 4225 2400 50  0000 L CNN
+F 1 "10uF" H 4225 2200 50  0000 L CNN
+F 2 "" H 4238 2150 50  0001 C CNN
+F 3 "" H 4200 2300 50  0001 C CNN
+	1    4200 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2050 2850 2050
+Wire Wire Line
+	2850 2050 2850 2150
+Wire Wire Line
+	2850 2450 2850 2550
+Wire Wire Line
+	4200 2050 4200 2150
+$Comp
+L GND #PWR?
+U 1 1 5A6B039A
+P 3500 2650
+F 0 "#PWR?" H 3500 2400 50  0001 C CNN
+F 1 "GND" H 3500 2500 50  0000 C CNN
+F 2 "" H 3500 2650 50  0001 C CNN
+F 3 "" H 3500 2650 50  0001 C CNN
+	1    3500 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2450 4200 2550
+Wire Wire Line
+	3500 2400 3500 2650
+$Comp
+L Conn_01x02 J?
+U 1 1 5A6B0805
+P 5100 2450
+F 0 "J?" H 5100 2550 50  0000 C CNN
+F 1 "Conn_01x02" H 5100 2250 50  0000 C CNN
+F 2 "" H 5100 2450 50  0001 C CNN
+F 3 "" H 5100 2450 50  0001 C CNN
+	1    5100 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 2050
+Wire Wire Line
+	1900 2550 4900 2550
+Connection ~ 4200 2550
+Connection ~ 3500 2550
+Wire Wire Line
+	2300 1250 2300 1400
+Connection ~ 2650 1250
+Wire Wire Line
+	2300 2550 2300 1700
+Connection ~ 2850 2550
+$Comp
+L Conn_01x02 J?
+U 1 1 5A6B1384
+P 1600 1250
+F 0 "J?" H 1600 1350 50  0000 C CNN
+F 1 "Conn_01x02" H 1600 1050 50  0000 C CNN
+F 2 "" H 1600 1250 50  0001 C CNN
+F 3 "" H 1600 1250 50  0001 C CNN
+	1    1600 1250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L D D?
+U 1 1 5A6B14B7
+P 2050 1250
+F 0 "D?" H 2050 1350 50  0000 C CNN
+F 1 "D" H 2050 1150 50  0000 C CNN
+F 2 "" H 2050 1250 50  0001 C CNN
+F 3 "" H 2050 1250 50  0001 C CNN
+	1    2050 1250
+	-1   0    0    1   
+$EndComp
+Connection ~ 2300 1250
+Wire Wire Line
+	1800 1250 1900 1250
+Wire Wire Line
+	2200 1250 3750 1250
+Wire Wire Line
+	1800 1350 1900 1350
+Wire Wire Line
+	1900 1350 1900 2550
+Connection ~ 2300 2550
+Wire Notes Line
+	1300 950  5400 950 
+Wire Notes Line
+	5400 950  5400 2950
+Wire Notes Line
+	5400 2950 1300 2950
+Wire Notes Line
+	1300 2950 1300 950 
+Text Notes 1350 2900 0    60   ~ 0
+Lithium cell charger
+$Comp
+L +BATT #PWR?
+U 1 1 5A6FAC59
+P 5100 1950
+F 0 "#PWR?" H 5100 1800 50  0001 C CNN
+F 1 "+BATT" H 5100 2090 50  0000 C CNN
+F 2 "" H 5100 1950 50  0001 C CNN
+F 3 "" H 5100 1950 50  0001 C CNN
+	1    5100 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPS63031 U?
+U 1 1 5A6FBC59
+P 6650 1950
+F 0 "U?" H 6650 2350 60  0000 C CNN
+F 1 "TPS63031" H 6650 1550 60  0000 C CNN
+F 2 "" H 6650 1450 60  0001 C CNN
+F 3 "" H 6650 1450 60  0001 C CNN
+	1    6650 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L?
+U 1 1 5A6FBD77
+P 6650 1350
+F 0 "L?" V 6600 1350 50  0000 C CNN
+F 1 "1.5uH" V 6725 1350 50  0000 C CNN
+F 2 "" H 6650 1350 50  0001 C CNN
+F 3 "" H 6650 1350 50  0001 C CNN
+	1    6650 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 1350 6000 1700
+Wire Wire Line
+	6000 1700 6100 1700
+Wire Wire Line
+	7300 1350 7300 1700
+Wire Wire Line
+	7300 1700 7200 1700
+Wire Wire Line
+	7300 1350 6800 1350
+Wire Wire Line
+	6500 1350 6000 1350
+$Comp
+L C C?
+U 1 1 5A6FC08C
+P 5750 2050
+F 0 "C?" H 5775 2150 50  0000 L CNN
+F 1 "4.7uF" H 5775 1950 50  0000 L CNN
+F 2 "" H 5788 1900 50  0001 C CNN
+F 3 "" H 5750 2050 50  0001 C CNN
+	1    5750 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A6FC1B6
+P 7450 2000
+F 0 "C?" H 7475 2100 50  0000 L CNN
+F 1 "10uF" H 7475 1900 50  0000 L CNN
+F 2 "" H 7488 1850 50  0001 C CNN
+F 3 "" H 7450 2000 50  0001 C CNN
+	1    7450 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1700 5750 1900
+Wire Wire Line
+	6100 1900 6000 1900
+Wire Wire Line
+	6000 1800 6000 2100
+Connection ~ 6000 1800
+Wire Wire Line
+	6000 2000 6100 2000
+Connection ~ 6000 1900
+Wire Wire Line
+	6000 2100 6100 2100
+Connection ~ 6000 2000
+$Comp
+L GND #PWR?
+U 1 1 5A6FC3F5
+P 5750 2300
+F 0 "#PWR?" H 5750 2050 50  0001 C CNN
+F 1 "GND" H 5750 2150 50  0000 C CNN
+F 2 "" H 5750 2300 50  0001 C CNN
+F 3 "" H 5750 2300 50  0001 C CNN
+	1    5750 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2200 5750 2300
+$Comp
+L GND #PWR?
+U 1 1 5A6FC483
+P 7300 2300
+F 0 "#PWR?" H 7300 2050 50  0001 C CNN
+F 1 "GND" H 7300 2150 50  0000 C CNN
+F 2 "" H 7300 2300 50  0001 C CNN
+F 3 "" H 7300 2300 50  0001 C CNN
+	1    7300 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2100 7300 2100
+Wire Wire Line
+	7200 2200 7450 2200
+Connection ~ 7300 2200
+Wire Wire Line
+	7200 1900 7300 1900
+Wire Wire Line
+	7300 1900 7300 1800
+Connection ~ 7300 1800
+$Comp
+L +BATT #PWR?
+U 1 1 5A6FCC3D
+P 5750 1700
+F 0 "#PWR?" H 5750 1550 50  0001 C CNN
+F 1 "+BATT" H 5750 1840 50  0000 C CNN
+F 2 "" H 5750 1700 50  0001 C CNN
+F 3 "" H 5750 1700 50  0001 C CNN
+	1    5750 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 1800
+Wire Wire Line
+	5750 1800 6100 1800
+Wire Wire Line
+	7200 1800 7650 1800
+Wire Wire Line
+	7450 1700 7450 1850
+Wire Wire Line
+	7450 2200 7450 2150
+Wire Wire Line
+	7300 2100 7300 2300
+Text GLabel 7650 1800 2    60   Input ~ 0
+3V3
+$Comp
+L +3V3 #PWR?
+U 1 1 5A6FDAFA
+P 7450 1700
+F 0 "#PWR?" H 7450 1550 50  0001 C CNN
+F 1 "+3V3" H 7450 1840 50  0000 C CNN
+F 2 "" H 7450 1700 50  0001 C CNN
+F 3 "" H 7450 1700 50  0001 C CNN
+	1    7450 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 7450 1800
+Text GLabel 4900 2200 2    60   Input ~ 0
+VBAT
+Wire Wire Line
+	4100 2050 5100 2050
+Wire Wire Line
+	4800 2450 4900 2450
+Connection ~ 4800 2050
+Wire Wire Line
+	4900 2200 4800 2200
+Connection ~ 4800 2200
+Wire Wire Line
+	4800 1250 4800 2450
+Wire Wire Line
+	4800 1250 4750 1250
+Wire Wire Line
+	5100 2050 5100 1950
+Wire Notes Line
+	5500 950  5500 2950
+Wire Notes Line
+	5500 950  7950 950 
+Wire Notes Line
+	7950 950  7950 2950
+Wire Notes Line
+	7950 2950 5500 2950
+Text Notes 5550 2900 0    60   ~ 0
+Buck-boost converter
+$EndSCHEMATC
