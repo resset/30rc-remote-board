@@ -36,7 +36,7 @@ LIBS:Power_Protection
 LIBS:Power_Management
 LIBS:Battery_Management
 LIBS:Regulator_Switching
-LIBS:30rc-remote-cache
+LIBS:30rc-remote-board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268

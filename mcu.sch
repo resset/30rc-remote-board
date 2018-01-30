@@ -36,13 +36,13 @@ LIBS:Power_Protection
 LIBS:Power_Management
 LIBS:Battery_Management
 LIBS:Regulator_Switching
-LIBS:30rc-remote-cache
+LIBS:30rc-remote-board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
-Title "30rc-remote"
+Title "30rc-remote-board"
 Date ""
 Rev "1"
 Comp "OngeTech"

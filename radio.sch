@@ -30,7 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:rfm69w
 LIBS:stm32
-LIBS:30rc-remote-cache
+LIBS:30rc-remote-board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
